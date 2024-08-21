@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Aug 18 22:27:50 2024
+# Process ID: 18052
+# Current directory: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18264 C:\Users\DELL\Desktop\CW4.team\adc_8channel V2\adc_8channel\adc_8channel.xpr
+# Log file: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/vivado.log
+# Journal file: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel\vivado.jou
+#-----------------------------------------------------------
+start_guioopen_project {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.xpr}Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1086.180 ; gain = 329.223
+update_compile_order -fileset sources_1
+eexit
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 18 22:29:05 2024...

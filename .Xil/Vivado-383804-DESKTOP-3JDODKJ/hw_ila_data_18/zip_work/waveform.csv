@@ -1,0 +1,1 @@
+Sample in Buffer,Sample in Window,TRIGGER,wr_sd/sd_sec_read_data_valid,wr_sd/sd_sec_read_data[7:0],wr_sd/sd_sec_write_data_req,wr_sd/sd_sec_write_data[7:0],wr_sd/state[3:0],wr_sd/sd_wr_start,wr_sd/sd_init_done,wr_sd/sd_wr_data[3:0],wr_sd/rd_fifo4,wr_sd/sd_sec_write_end,wr_sd/sd_sec_write_addr[31:0],wr_sd/cnt_sd[8:0]

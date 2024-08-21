@@ -1,0 +1,1054 @@
+
+*** Running vivado
+    with args -log top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: link_design -top top -part xcku040-ffva1156-2-i
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.dcp' for cell 'clk_for_all'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo5/fifo5.dcp' for cell 'data/adc_total_data_eth'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-9084-DESKTOP-3JDODKJ/fifo4/fifo4.dcp' for cell 'data/adc_total_data_sd'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-9084-DESKTOP-3JDODKJ/fifo_ttt/fifo_ttt.dcp' for cell 'data/tt'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_1/ila_1.dcp' for cell 'data/uut_1'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-9084-DESKTOP-3JDODKJ/fifo2/fifo2.dcp' for cell 'data/adc_A_data_package/adc_fifo2'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-9084-DESKTOP-3JDODKJ/fifo3/fifo3.dcp' for cell 'data/adc_A_data_package/adc_fifo3'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_2.dcp' for cell 'data/adc_A_data_package/uut_3'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_0.dcp' for cell 'data/adc_A_data_sample/uut_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/eth_data_fifo/eth_data_fifo.dcp' for cell 'ethernet2/eth2/arbi_inst/rx_buffer_inst/rx_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/len_fifo/len_fifo.dcp' for cell 'ethernet2/eth2/arbi_inst/rx_buffer_inst/rx_len_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_5/ila_5.dcp' for cell 'ethernet2/eth2/mac_test0/urtss'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/icmp_rx_ram_8_256/icmp_rx_ram_8_256.dcp' for cell 'ethernet2/eth2/mac_test0/mac_top0/icmp0/icmp_receive_ram'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/udp_rx_ram_8_2048/udp_rx_ram_8_2048.dcp' for cell 'ethernet2/eth2/mac_test0/mac_top0/mac_rx0/udp0/udp_receive_ram'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/udp_tx_data_fifo/udp_tx_data_fifo.dcp' for cell 'ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/tx_data_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/udp_checksum_fifo/udp_checksum_fifo.dcp' for cell 'ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/udp_tx_checksum'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_6/ila_6.dcp' for cell 'ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ustm'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_3/ila_3.dcp' for cell 'wr_sd/ila_m0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_4/ila_4.dcp' for cell 'wr_sd/sd_card_top_m0/sd_card_sec_read_write_m0/sd'
+INFO: [Netlist 29-17] Analyzing 4646 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-i
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: data/adc_A_data_package/uut_3 UUID: 6d47e3af-9c7e-59e7-9963-bc71507b6d99 
+INFO: [Chipscope 16-324] Core: data/adc_A_data_sample/uut_0 UUID: d14e6d4c-26cc-5071-bf33-32e21ae39c68 
+INFO: [Chipscope 16-324] Core: data/adc_B_data_package/uut_3 UUID: 9fdd7282-730b-5f68-9ab9-91a7967e1457 
+INFO: [Chipscope 16-324] Core: data/adc_B_data_sample/uut_0 UUID: 490deb9b-4d07-5efd-97b5-8a8f0d78da89 
+INFO: [Chipscope 16-324] Core: data/adc_C_data_package/uut_3 UUID: 09ff47d6-1a61-532d-8f30-0faf4a149839 
+INFO: [Chipscope 16-324] Core: data/adc_C_data_sample/uut_0 UUID: 6d932675-a7c8-5cc5-8a4a-99b939d6e5b3 
+INFO: [Chipscope 16-324] Core: data/adc_D_data_package/uut_3 UUID: 0ff01b60-37a2-56c5-a9f5-14b5b6452ec6 
+INFO: [Chipscope 16-324] Core: data/adc_D_data_sample/uut_0 UUID: 47638125-6c12-56b3-9a1f-1d3311c208f5 
+INFO: [Chipscope 16-324] Core: data/adc_E_data_package/uut_3 UUID: a7651e43-1dd6-57c4-b4ff-1118b300fcf6 
+INFO: [Chipscope 16-324] Core: data/adc_E_data_sample/uut_0 UUID: ed398ce5-2bb1-5480-b441-2359240cf7d8 
+INFO: [Chipscope 16-324] Core: data/adc_F_data_package/uut_3 UUID: 6abcd31a-199c-5b69-a07b-1d12eea87c79 
+INFO: [Chipscope 16-324] Core: data/adc_F_data_sample/uut_0 UUID: 906ad112-3bb3-5c2d-9644-51161be63c48 
+INFO: [Chipscope 16-324] Core: data/adc_G_data_package/uut_3 UUID: 83f33d51-8359-5ce9-8fd9-907020c00d1a 
+INFO: [Chipscope 16-324] Core: data/adc_G_data_sample/uut_0 UUID: 7f1dd1de-4797-5d75-a5cf-5474c034f10d 
+INFO: [Chipscope 16-324] Core: data/adc_H_data_package/uut_3 UUID: ff4f5ce3-f69b-5a3a-8d34-d3164b83787a 
+INFO: [Chipscope 16-324] Core: data/adc_H_data_sample/uut_0 UUID: b5b950fc-c297-5a97-988d-87884a48855d 
+INFO: [Chipscope 16-324] Core: data/uut_1 UUID: 6b034297-e56f-5118-92e9-991162ef3926 
+INFO: [Chipscope 16-324] Core: ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ustm UUID: ce995f56-7366-5af3-9e49-dd7450b1e11c 
+INFO: [Chipscope 16-324] Core: ethernet2/eth2/mac_test0/urtss UUID: 0a64475a-a160-50c3-b0ab-007a398271c0 
+INFO: [Chipscope 16-324] Core: wr_sd/ila_m0 UUID: bd6bddab-a298-5cdb-8754-b5789f26ff22 
+INFO: [Chipscope 16-324] Core: wr_sd/sd_card_top_m0/sd_card_sec_read_write_m0/sd UUID: eb9b0b74-931c-587e-a339-d17da567c613 
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm_board.xdc] for cell 'clk_for_all/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm_board.xdc] for cell 'clk_for_all/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xdc] for cell 'clk_for_all/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xdc:57]
+get_clocks: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1732.188 ; gain = 423.328
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xdc] for cell 'clk_for_all/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo3/fifo3.xdc] for cell 'data/adc_A_data_package/adc_fifo3/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo3/fifo3.xdc] for cell 'data/adc_A_data_package/adc_fifo3/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo3/fifo3.xdc] for cell 'data/adc_B_data_package/adc_fifo3/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo3/fifo3.xdc] for cell 'data/adc_B_data_package/adc_fifo3/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo3/fifo3.xdc] for cell 'data/adc_C_data_package/adc_fifo3/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo3/fifo3.xdc] for cell 'data/adc_C_data_package/adc_fifo3/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo3/fifo3.xdc] for cell 'data/adc_D_data_package/adc_fifo3/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo3/fifo3.xdc] for cell 'data/adc_D_data_package/adc_fifo3/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo3/fifo3.xdc] for cell 'data/adc_E_data_package/adc_fifo3/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo3/fifo3.xdc] for cell 'data/adc_E_data_package/adc_fifo3/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo3/fifo3.xdc] for cell 'data/adc_F_data_package/adc_fifo3/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo3/fifo3.xdc] for cell 'data/adc_F_data_package/adc_fifo3/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo3/fifo3.xdc] for cell 'data/adc_G_data_package/adc_fifo3/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo3/fifo3.xdc] for cell 'data/adc_G_data_package/adc_fifo3/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo3/fifo3.xdc] for cell 'data/adc_H_data_package/adc_fifo3/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo3/fifo3.xdc] for cell 'data/adc_H_data_package/adc_fifo3/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo2/fifo2.xdc] for cell 'data/adc_A_data_package/adc_fifo2/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo2/fifo2.xdc] for cell 'data/adc_A_data_package/adc_fifo2/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo2/fifo2.xdc] for cell 'data/adc_B_data_package/adc_fifo2/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo2/fifo2.xdc] for cell 'data/adc_B_data_package/adc_fifo2/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo2/fifo2.xdc] for cell 'data/adc_C_data_package/adc_fifo2/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo2/fifo2.xdc] for cell 'data/adc_C_data_package/adc_fifo2/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo2/fifo2.xdc] for cell 'data/adc_D_data_package/adc_fifo2/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo2/fifo2.xdc] for cell 'data/adc_D_data_package/adc_fifo2/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo2/fifo2.xdc] for cell 'data/adc_E_data_package/adc_fifo2/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo2/fifo2.xdc] for cell 'data/adc_E_data_package/adc_fifo2/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo2/fifo2.xdc] for cell 'data/adc_F_data_package/adc_fifo2/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo2/fifo2.xdc] for cell 'data/adc_F_data_package/adc_fifo2/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo2/fifo2.xdc] for cell 'data/adc_G_data_package/adc_fifo2/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo2/fifo2.xdc] for cell 'data/adc_G_data_package/adc_fifo2/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo2/fifo2.xdc] for cell 'data/adc_H_data_package/adc_fifo2/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo2/fifo2.xdc] for cell 'data/adc_H_data_package/adc_fifo2/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo4/fifo4.xdc] for cell 'data/adc_total_data_sd/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo4/fifo4.xdc] for cell 'data/adc_total_data_sd/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo_ttt/fifo_ttt.xdc] for cell 'data/tt/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo_ttt/fifo_ttt.xdc] for cell 'data/tt/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_A_data_sample/uut_0/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_A_data_sample/uut_0/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_B_data_sample/uut_0/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_B_data_sample/uut_0/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_C_data_sample/uut_0/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_C_data_sample/uut_0/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_D_data_sample/uut_0/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_D_data_sample/uut_0/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_E_data_sample/uut_0/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_E_data_sample/uut_0/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_F_data_sample/uut_0/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_F_data_sample/uut_0/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_G_data_sample/uut_0/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_G_data_sample/uut_0/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_H_data_sample/uut_0/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_H_data_sample/uut_0/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_A_data_sample/uut_0/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_A_data_sample/uut_0/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_B_data_sample/uut_0/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_B_data_sample/uut_0/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_C_data_sample/uut_0/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_C_data_sample/uut_0/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_D_data_sample/uut_0/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_D_data_sample/uut_0/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_E_data_sample/uut_0/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_E_data_sample/uut_0/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_F_data_sample/uut_0/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_F_data_sample/uut_0/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_G_data_sample/uut_0/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_G_data_sample/uut_0/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_H_data_sample/uut_0/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_H_data_sample/uut_0/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_1/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/uut_1/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_1/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/uut_1/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_1/ila_v6_2/constraints/ila.xdc] for cell 'data/uut_1/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_1/ila_v6_2/constraints/ila.xdc] for cell 'data/uut_1/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_A_data_package/uut_3/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_A_data_package/uut_3/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_B_data_package/uut_3/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_B_data_package/uut_3/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_C_data_package/uut_3/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_C_data_package/uut_3/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_D_data_package/uut_3/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_D_data_package/uut_3/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_E_data_package/uut_3/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_E_data_package/uut_3/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_F_data_package/uut_3/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_F_data_package/uut_3/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_G_data_package/uut_3/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_G_data_package/uut_3/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_H_data_package/uut_3/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila_impl.xdc] for cell 'data/adc_H_data_package/uut_3/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_A_data_package/uut_3/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_A_data_package/uut_3/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_B_data_package/uut_3/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_B_data_package/uut_3/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_C_data_package/uut_3/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_C_data_package/uut_3/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_D_data_package/uut_3/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_D_data_package/uut_3/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_E_data_package/uut_3/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_E_data_package/uut_3/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_F_data_package/uut_3/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_F_data_package/uut_3/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_G_data_package/uut_3/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_G_data_package/uut_3/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_H_data_package/uut_3/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila.xdc] for cell 'data/adc_H_data_package/uut_3/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_3/ila_v6_2/constraints/ila_impl.xdc] for cell 'wr_sd/ila_m0/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_3/ila_v6_2/constraints/ila_impl.xdc] for cell 'wr_sd/ila_m0/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_3/ila_v6_2/constraints/ila.xdc] for cell 'wr_sd/ila_m0/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_3/ila_v6_2/constraints/ila.xdc] for cell 'wr_sd/ila_m0/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_4/ila_v6_2/constraints/ila_impl.xdc] for cell 'wr_sd/sd_card_top_m0/sd_card_sec_read_write_m0/sd/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_4/ila_v6_2/constraints/ila_impl.xdc] for cell 'wr_sd/sd_card_top_m0/sd_card_sec_read_write_m0/sd/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_4/ila_v6_2/constraints/ila.xdc] for cell 'wr_sd/sd_card_top_m0/sd_card_sec_read_write_m0/sd/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_4/ila_v6_2/constraints/ila.xdc] for cell 'wr_sd/sd_card_top_m0/sd_card_sec_read_write_m0/sd/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo5/fifo5.xdc] for cell 'data/adc_total_data_eth/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo5/fifo5.xdc] for cell 'data/adc_total_data_eth/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/eth_data_fifo/eth_data_fifo.xdc] for cell 'ethernet2/eth2/arbi_inst/rx_buffer_inst/rx_fifo/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/eth_data_fifo/eth_data_fifo.xdc] for cell 'ethernet2/eth2/arbi_inst/rx_buffer_inst/rx_fifo/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/eth_data_fifo/eth_data_fifo.xdc] for cell 'ethernet2/eth2/arbi_inst/tx_buffer_inst/tx_fifo/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/eth_data_fifo/eth_data_fifo.xdc] for cell 'ethernet2/eth2/arbi_inst/tx_buffer_inst/tx_fifo/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/len_fifo/len_fifo.xdc] for cell 'ethernet2/eth2/arbi_inst/rx_buffer_inst/rx_len_fifo/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/len_fifo/len_fifo.xdc] for cell 'ethernet2/eth2/arbi_inst/rx_buffer_inst/rx_len_fifo/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/len_fifo/len_fifo.xdc] for cell 'ethernet2/eth2/arbi_inst/tx_buffer_inst/tx_len_fifo/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/len_fifo/len_fifo.xdc] for cell 'ethernet2/eth2/arbi_inst/tx_buffer_inst/tx_len_fifo/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/udp_checksum_fifo/udp_checksum_fifo.xdc] for cell 'ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/udp_tx_checksum/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/udp_checksum_fifo/udp_checksum_fifo.xdc] for cell 'ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/udp_tx_checksum/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/udp_tx_data_fifo/udp_tx_data_fifo.xdc] for cell 'ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/tx_data_fifo/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/udp_tx_data_fifo/udp_tx_data_fifo.xdc] for cell 'ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/tx_data_fifo/U0'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_5/ila_v6_2/constraints/ila_impl.xdc] for cell 'ethernet2/eth2/mac_test0/urtss/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_5/ila_v6_2/constraints/ila_impl.xdc] for cell 'ethernet2/eth2/mac_test0/urtss/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_5/ila_v6_2/constraints/ila.xdc] for cell 'ethernet2/eth2/mac_test0/urtss/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_5/ila_v6_2/constraints/ila.xdc] for cell 'ethernet2/eth2/mac_test0/urtss/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_6/ila_v6_2/constraints/ila_impl.xdc] for cell 'ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ustm/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_6/ila_v6_2/constraints/ila_impl.xdc] for cell 'ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ustm/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_6/ila_v6_2/constraints/ila.xdc] for cell 'ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ustm/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_6/ila_v6_2/constraints/ila.xdc] for cell 'ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ustm/inst'
+Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/constrs_1/imports/new/adc_ethernet.xdc]
+WARNING: [Constraints 18-619] A clock with name 'adc1_clk_p' already exists, overwriting the previous clock with the same name. [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/constrs_1/imports/new/adc_ethernet.xdc:239]
+WARNING: [Constraints 18-619] A clock with name 'adc2_clk_p' already exists, overwriting the previous clock with the same name. [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/constrs_1/imports/new/adc_ethernet.xdc:240]
+WARNING: [Vivado 12-508] No pins matched 'data/adc_total_data/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/CLKBWRCLK'. [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/constrs_1/imports/new/adc_ethernet.xdc:335]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {data/adc_total_data/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/CLKBWRCLK}]'. [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/constrs_1/imports/new/adc_ethernet.xdc:335]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'data/adc_total_data/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/CLKBWRCLK'. [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/constrs_1/imports/new/adc_ethernet.xdc:336]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {data/adc_total_data/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/CLKBWRCLK}]'. [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/constrs_1/imports/new/adc_ethernet.xdc:336]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'data/adc_total_data/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/CLKBWRCLK'. [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/constrs_1/imports/new/adc_ethernet.xdc:337]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {data/adc_total_data/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/CLKBWRCLK}]'. [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/constrs_1/imports/new/adc_ethernet.xdc:337]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'data/adc_total_data/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/CLKBWRCLK'. [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/constrs_1/imports/new/adc_ethernet.xdc:338]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {data/adc_total_data/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/CLKBWRCLK}]'. [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/constrs_1/imports/new/adc_ethernet.xdc:338]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/constrs_1/imports/new/adc_ethernet.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-9084-DESKTOP-3JDODKJ/fifo3/fifo3.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-9084-DESKTOP-3JDODKJ/fifo3/fifo3.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-9084-DESKTOP-3JDODKJ/fifo3/fifo3.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-9084-DESKTOP-3JDODKJ/fifo3/fifo3.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-9084-DESKTOP-3JDODKJ/fifo3/fifo3.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-9084-DESKTOP-3JDODKJ/fifo3/fifo3.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-9084-DESKTOP-3JDODKJ/fifo3/fifo3.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-9084-DESKTOP-3JDODKJ/fifo3/fifo3.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-9084-DESKTOP-3JDODKJ/fifo2/fifo2.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-9084-DESKTOP-3JDODKJ/fifo2/fifo2.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-9084-DESKTOP-3JDODKJ/fifo2/fifo2.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-9084-DESKTOP-3JDODKJ/fifo2/fifo2.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-9084-DESKTOP-3JDODKJ/fifo2/fifo2.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-9084-DESKTOP-3JDODKJ/fifo2/fifo2.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-9084-DESKTOP-3JDODKJ/fifo2/fifo2.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-9084-DESKTOP-3JDODKJ/fifo2/fifo2.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-9084-DESKTOP-3JDODKJ/fifo4/fifo4.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-9084-DESKTOP-3JDODKJ/fifo_ttt/fifo_ttt.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo5/fifo5.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/eth_data_fifo/eth_data_fifo.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/eth_data_fifo/eth_data_fifo.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/len_fifo/len_fifo.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/len_fifo/len_fifo.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/udp_checksum_fifo/udp_checksum_fifo.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/udp_tx_data_fifo/udp_tx_data_fifo.dcp'
+Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo5/fifo5_clocks.xdc] for cell 'data/adc_total_data_eth/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo5/fifo5_clocks.xdc] for cell 'data/adc_total_data_eth/U0'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'data/adc_total_data_eth/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'data/adc_total_data_eth/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'data/adc_total_data_eth/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'data/adc_total_data_eth/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data/adc_total_data_eth/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data/adc_total_data_eth/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data/adc_total_data_eth/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data/adc_total_data_eth/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'ethernet2/eth2/arbi_inst/rx_buffer_inst/rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'ethernet2/eth2/arbi_inst/rx_buffer_inst/rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'ethernet2/eth2/arbi_inst/tx_buffer_inst/tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'ethernet2/eth2/arbi_inst/tx_buffer_inst/tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_A_data_package/adc_fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_A_data_package/adc_fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_B_data_package/adc_fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_B_data_package/adc_fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_C_data_package/adc_fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_C_data_package/adc_fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_D_data_package/adc_fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_D_data_package/adc_fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_E_data_package/adc_fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_E_data_package/adc_fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_F_data_package/adc_fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_F_data_package/adc_fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_G_data_package/adc_fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_G_data_package/adc_fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_H_data_package/adc_fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_H_data_package/adc_fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_A_data_package/adc_fifo3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_A_data_package/adc_fifo3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_B_data_package/adc_fifo3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_B_data_package/adc_fifo3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_C_data_package/adc_fifo3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_C_data_package/adc_fifo3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_D_data_package/adc_fifo3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_D_data_package/adc_fifo3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_E_data_package/adc_fifo3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_E_data_package/adc_fifo3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_F_data_package/adc_fifo3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_F_data_package/adc_fifo3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_G_data_package/adc_fifo3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_G_data_package/adc_fifo3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_H_data_package/adc_fifo3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_H_data_package/adc_fifo3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_total_data_sd/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_total_data_sd/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_total_data_eth/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_total_data_eth/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_total_data_eth/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/adc_total_data_eth/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/tt/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data/tt/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'ethernet2/eth2/arbi_inst/rx_buffer_inst/rx_len_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'ethernet2/eth2/arbi_inst/rx_buffer_inst/rx_len_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'ethernet2/eth2/arbi_inst/tx_buffer_inst/tx_len_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'ethernet2/eth2/arbi_inst/tx_buffer_inst/tx_len_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/udp_tx_checksum/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/udp_tx_checksum/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/tx_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/tx_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell ethernet2/eth2/mac_test0/mac_top0/mac_rx0/udp0/udp_receive_ram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2346 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 2284 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 8 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 53 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 1 instances
+
+75 Infos, 6 Warnings, 4 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:42 . Memory (MB): peak = 1769.359 ; gain = 1350.285
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku040'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port board1_adc1_spi_io expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port board1_adc2_spi_io expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port board2_adc1_spi_io expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port board2_adc2_spi_io expects both input and output buffering but the buffers are incomplete.
+INFO: [Project 1-461] DRC finished with 0 Errors, 4 Warnings
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.814 . Memory (MB): peak = 1769.359 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-318] Generating core instance : dbg_hub
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Netlist 29-17] Analyzing 2355 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 1769.359 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 12b094978
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:53 . Memory (MB): peak = 1769.359 ; gain = 0.000
+
+Phase 2 Retarget
+INFO: [Opt 31-138] Pushed 75 inverter(s) to 3529 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_A_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_A_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_A_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_A_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_A_data_sample/uut_0/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_B_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_B_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_B_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_B_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_B_data_sample/uut_0/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_C_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_C_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_C_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_C_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_C_data_sample/uut_0/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_D_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_D_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_D_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_D_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_D_data_sample/uut_0/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_E_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_E_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_E_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_E_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_E_data_sample/uut_0/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_F_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_F_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_F_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_F_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_F_data_sample/uut_0/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_G_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_G_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_G_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_G_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_G_data_sample/uut_0/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_H_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_H_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_H_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_H_data_package/uut_3/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/adc_H_data_sample/uut_0/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[20].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[22].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[23].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[25].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[26].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[27].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[30].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[34].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[35].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[36].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[37].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[38].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[39].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[40].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[41].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[42].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[43].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[44].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[45].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[46].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[47].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[48].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[49].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[50].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[51].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[52].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[53].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[54].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[55].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[56].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[57].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[58].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[59].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[60].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[61].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[62].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell data/uut_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[63].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Common 17-14] Message 'Opt 31-422' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 14e422998
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:58 . Memory (MB): peak = 1785.758 ; gain = 16.398
+INFO: [Opt 31-389] Phase Retarget created 391 cells and removed 523 cells
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 7 load pin(s).
+Phase 3 Constant propagation | Checksum: 81cb274f
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:59 . Memory (MB): peak = 1785.758 ; gain = 16.398
+INFO: [Opt 31-389] Phase Constant propagation created 88 cells and removed 680 cells
+
+Phase 4 Sweep
+Phase 4 Sweep | Checksum: 5c5973d4
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:01:02 . Memory (MB): peak = 1785.758 ; gain = 16.398
+INFO: [Opt 31-389] Phase Sweep created 5 cells and removed 1086 cells
+
+Phase 5 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG adc_board1/adc1_clk_BUFG_inst to drive 24 load(s) on clock net adc_board1/adc1_clk_BUFGCE
+INFO: [Opt 31-194] Inserted BUFG adc_board1/adc2_clk_BUFG_inst to drive 24 load(s) on clock net adc_board1/adc2_clk_BUFGCE
+INFO: [Opt 31-194] Inserted BUFG adc_board2/adc1_clk_BUFG_inst to drive 24 load(s) on clock net adc_board2/adc1_clk_BUFGCE
+INFO: [Opt 31-194] Inserted BUFG adc_board2/adc2_clk_BUFG_inst to drive 24 load(s) on clock net adc_board2/adc2_clk_BUFGCE
+INFO: [Opt 31-193] Inserted 4 BUFG(s) on clock nets
+Phase 5 BUFG optimization | Checksum: f6fc116b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:01:04 . Memory (MB): peak = 1785.758 ; gain = 16.398
+INFO: [Opt 31-389] Phase BUFG optimization created 4 cells and removed 0 cells
+
+Phase 6 Shift Register Optimization
+Phase 6 Shift Register Optimization | Checksum: f6fc116b
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:01:05 . Memory (MB): peak = 1785.758 ; gain = 16.398
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.130 . Memory (MB): peak = 1785.758 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 8ba1957c
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:01:06 . Memory (MB): peak = 1785.758 ; gain = 16.398
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=2.199 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 68 BRAM(s) out of a total of 199 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-201] Structural ODC has moved 18 WE to EN ports
+Number of BRAM Ports augmented: 235 newly gated: 18 Total Ports: 398
+Ending PowerOpt Patch Enables Task | Checksum: 161df23a4
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 4086.227 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 161df23a4
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:45 . Memory (MB): peak = 4086.227 ; gain = 2300.469
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1 Remap
+Phase 1 Remap | Checksum: 1472c7eef
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 4086.227 ; gain = 0.000
+INFO: [Opt 31-389] Phase Remap created 32 cells and removed 88 cells
+Ending Logic Optimization Task | Checksum: 1472c7eef
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 4086.227 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+212 Infos, 10 Warnings, 4 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:31 ; elapsed = 00:02:02 . Memory (MB): peak = 4086.227 ; gain = 2316.867
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 4086.227 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/top_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 4086.227 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
+Command: report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/top_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku040'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port board1_adc1_spi_io expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port board1_adc2_spi_io expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port board2_adc1_spi_io expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port board2_adc2_spi_io expects both input and output buffering but the buffers are incomplete.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 4 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 4086.227 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 68218ca2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.162 . Memory (MB): peak = 4086.227 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: a80c6853
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 136f11d0c
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:29 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 136f11d0c
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:29 . Memory (MB): peak = 4086.227 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 136f11d0c
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:29 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 130dbcf98
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:57 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 130dbcf98
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:58 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: b4b0571c
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:01:01 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 15bc66ea9
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:01:02 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 174aedf85
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:01:02 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 3.5 Small Shape Clustering
+Phase 3.5 Small Shape Clustering | Checksum: 11c10956a
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:01:05 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 3.6 DP Optimization
+Phase 3.6 DP Optimization | Checksum: 139cc0f1d
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:01:17 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 3.7 Flow Legalize Slice Clusters
+Phase 3.7 Flow Legalize Slice Clusters | Checksum: 12e346f65
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:01:18 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 3.8 Slice Area Swap
+Phase 3.8 Slice Area Swap | Checksum: 127c21463
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:01:20 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 3.9 Commit Slice Clusters
+Phase 3.9 Commit Slice Clusters | Checksum: 1be45421a
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:01:26 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 3.10 Re-assign LUT pins
+Phase 3.10 Re-assign LUT pins | Checksum: 1ca2359a9
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:01:28 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 3.11 Pipeline Register Optimization
+Phase 3.11 Pipeline Register Optimization | Checksum: 1ca2359a9
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:01:28 . Memory (MB): peak = 4086.227 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1ca2359a9
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:01:28 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1c38ca028
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Place 46-35] Processed net ethernet2/eth2/arbi_inst/e_rst_n, inserted BUFG to drive 2600 loads.
+INFO: [Place 46-31] BUFG insertion identified 1 candidate nets, 1 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 15ba47b8e
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:01:44 . Memory (MB): peak = 4086.227 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.763. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 218ea7ed3
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:01:44 . Memory (MB): peak = 4086.227 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 218ea7ed3
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:01:44 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 218ea7ed3
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:01:45 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 2be1d63fb
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:01:46 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 35b47d57a
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:01:47 . Memory (MB): peak = 4086.227 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 35b47d57a
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:01:47 . Memory (MB): peak = 4086.227 ; gain = 0.000
+Ending Placer Task | Checksum: 2683db1bb
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:01:47 . Memory (MB): peak = 4086.227 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+235 Infos, 14 Warnings, 4 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:46 ; elapsed = 00:01:50 . Memory (MB): peak = 4086.227 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 4086.227 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/top_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 4086.227 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.113 . Memory (MB): peak = 4086.227 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_placed.rpt -pb top_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.498 . Memory (MB): peak = 4086.227 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.167 . Memory (MB): peak = 4086.227 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku040'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: cb76ef54 ConstDB: 0 ShapeSum: f793dd3f RouteDB: a532e528
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1145ac4b3
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 4086.227 ; gain = 0.000
+Post Restoration Checksum: NetGraph: e009a37e NumContArr: 4e22dce7 Constraints: 4621ead3 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1744e6b38
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1744e6b38
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1744e6b38
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 2.4 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.4 Global Clock Net Routing | Checksum: 1426c255a
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 2.5 Update Timing
+Phase 2.5 Update Timing | Checksum: 15b283a82
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 4086.227 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.819  | TNS=0.000  | WHS=-0.355 | THS=-32.744|
+
+
+Phase 2.6 Update Timing for Bus Skew
+
+Phase 2.6.1 Update Timing
+Phase 2.6.1 Update Timing | Checksum: 189fa57ac
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:47 . Memory (MB): peak = 4086.227 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.819  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.6 Update Timing for Bus Skew | Checksum: 189fa57ac
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:47 . Memory (MB): peak = 4086.227 ; gain = 0.000
+Phase 2 Router Initialization | Checksum: 1f74700fd
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:47 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1bef05994
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:52 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 11424
+ Number of Nodes with overlaps = 563
+ Number of Nodes with overlaps = 51
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.750  | TNS=0.000  | WHS=0.001  | THS=0.000  |
+
+Phase 4.1 Global Iteration 0 | Checksum: 2e45cd4e8
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:01:13 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 4.2 Additional Iteration for Hold
+Phase 4.2 Additional Iteration for Hold | Checksum: 2ce813cc1
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:01:13 . Memory (MB): peak = 4086.227 ; gain = 0.000
+Phase 4 Rip-up And Reroute | Checksum: 2ce813cc1
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:01:13 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 2ce813cc1
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:01:13 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 2ce813cc1
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:01:13 . Memory (MB): peak = 4086.227 ; gain = 0.000
+Phase 5 Delay and Skew Optimization | Checksum: 2ce813cc1
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:01:13 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 2e2a35259
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:01:18 . Memory (MB): peak = 4086.227 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.750  | TNS=0.000  | WHS=0.001  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 206037cd0
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:01:18 . Memory (MB): peak = 4086.227 ; gain = 0.000
+Phase 6 Post Hold Fix | Checksum: 206037cd0
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:01:18 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.89445 %
+  Global Horizontal Routing Utilization  = 2.96623 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1a42c01e7
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:01:21 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1a42c01e7
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:01:21 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1a42c01e7
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:01:24 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 101c256f4
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:01:28 . Memory (MB): peak = 4086.227 ; gain = 0.000
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.750  | TNS=0.000  | WHS=0.004  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 101c256f4
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:01:28 . Memory (MB): peak = 4086.227 ; gain = 0.000
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:01:29 . Memory (MB): peak = 4086.227 ; gain = 0.000
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+255 Infos, 14 Warnings, 4 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:38 ; elapsed = 00:01:32 . Memory (MB): peak = 4086.227 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 4086.227 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/top_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 4086.227 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
+Command: report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/top_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 4086.227 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+Command: report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:06 ; elapsed = 00:00:21 . Memory (MB): peak = 4086.227 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
+Command: report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+267 Infos, 15 Warnings, 4 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 4086.227 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_route_status -file top_route_status.rpt -pb top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file top_timing_summary_routed.rpt -rpx top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file top_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 4086.227 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 21 21:58:32 2024...
+
+*** Running vivado
+    with args -log top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: open_checkpoint top_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 232.336 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4692 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-i
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-5372-DESKTOP-3JDODKJ/dcp1/top_board.xdc]
+Finished Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-5372-DESKTOP-3JDODKJ/dcp1/top_board.xdc]
+Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-5372-DESKTOP-3JDODKJ/dcp1/top_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xdc:57]
+get_clocks: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1684.012 ; gain = 429.809
+Finished Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-5372-DESKTOP-3JDODKJ/dcp1/top_early.xdc]
+Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-5372-DESKTOP-3JDODKJ/dcp1/top.xdc]
+WARNING: [Constraints 18-619] A clock with name 'adc1_clk_p' already exists, overwriting the previous clock with the same name. [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/constrs_1/imports/new/adc_ethernet.xdc:239]
+WARNING: [Constraints 18-619] A clock with name 'adc2_clk_p' already exists, overwriting the previous clock with the same name. [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/constrs_1/imports/new/adc_ethernet.xdc:240]
+Finished Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-5372-DESKTOP-3JDODKJ/dcp1/top.xdc]
+Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-5372-DESKTOP-3JDODKJ/dcp1/top_late.xdc]
+Finished Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/.Xil/Vivado-5372-DESKTOP-3JDODKJ/dcp1/top_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1871.031 ; gain = 1.285
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1871.031 ; gain = 1.285
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2350 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 2284 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 8 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 53 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 1 instances
+  RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.4 (64-bit) build 2086221
+open_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:41 . Memory (MB): peak = 1871.031 ; gain = 1645.391
+Command: write_bitstream -force top.bit -bin_file
+Attempting to get a license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku040'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A1' of cell data/adc_total_data_sd/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/xlnx_opt_LUT_DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_B_ENARDEN_cooolgate_en_gate_210 is not included in the LUT equation: 'O6=(A4*(~A6)*(~A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A1' of cell data/adc_total_data_sd/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/xlnx_opt_LUT_DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_T_ENARDEN_cooolgate_en_gate_218 is not included in the LUT equation: 'O6=(A4*(~A6)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A1' of cell data/adc_total_data_sd/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/xlnx_opt_LUT_DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_B_ENARDEN_cooolgate_en_gate_214 is not included in the LUT equation: 'O6=(A4*(~A5)*(~A6))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A1' of cell ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/tx_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/xlnx_opt_LUT_DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_T_ENARDEN_cooolgate_en_gate_180 is not included in the LUT equation: 'O6=(A4*(~A6)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A1' of cell ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/tx_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/prim_noinit.ram/xlnx_opt_LUT_DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_T_ENARDEN_cooolgate_en_gate_186 is not included in the LUT equation: 'O6=(A3*(~A4)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A2' of cell data/adc_total_data_sd/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/xlnx_opt_LUT_DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_B_ENARDEN_cooolgate_en_gate_212 is not included in the LUT equation: 'O6=(A4*(~A5)*(~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A2' of cell data/adc_total_data_sd/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/xlnx_opt_LUT_DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_T_ENARDEN_cooolgate_en_gate_220 is not included in the LUT equation: 'O6=(A4*(~A5)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/tx_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/xlnx_opt_LUT_DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_B_ENARDEN_cooolgate_en_gate_160 is not included in the LUT equation: 'O6=(A3*(~A2)*(~A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/tx_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/xlnx_opt_LUT_DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_T_ENARDEN_cooolgate_en_gate_176 is not included in the LUT equation: 'O6=(A6*(~A1)*A2)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/tx_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/xlnx_opt_LUT_DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_T_ENARDEN_cooolgate_en_gate_178 is not included in the LUT equation: 'O6=(A5*(~A1)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/tx_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/xlnx_opt_LUT_DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_B_ENARDEN_cooolgate_en_gate_164 is not included in the LUT equation: 'O6=(A1*(~A5)*(~A6))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/tx_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/xlnx_opt_LUT_DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_B_ENARDEN_cooolgate_en_gate_166 is not included in the LUT equation: 'O6=(A2*(~A1)*(~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/tx_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/xlnx_opt_LUT_DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_T_ENARDEN_cooolgate_en_gate_182 is not included in the LUT equation: 'O6=(A2*(~A1)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/tx_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_noinit.ram/xlnx_opt_LUT_DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_B_ENARDEN_cooolgate_en_gate_168 is not included in the LUT equation: 'O6=(A3*(~A2)*(~A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/tx_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_noinit.ram/xlnx_opt_LUT_DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_T_ENARDEN_cooolgate_en_gate_184 is not included in the LUT equation: 'O6=(A6*(~A1)*A2)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/tx_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_noinit.ram/xlnx_opt_LUT_DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_T_ENARDEN_cooolgate_en_gate_188 is not included in the LUT equation: 'O6=(A2*(~A1)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/tx_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_noinit.ram/xlnx_opt_LUT_DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_T_ENARDEN_cooolgate_en_gate_190 is not included in the LUT equation: 'O6=(A2*(~A1)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell data/adc_total_data_sd/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/xlnx_opt_LUT_DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_T_ENARDEN_cooolgate_en_gate_222 is not included in the LUT equation: 'O6=(A4*(~A6)*A2)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/tx_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/xlnx_opt_LUT_DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_B_ENARDEN_cooolgate_en_gate_162 is not included in the LUT equation: 'O6=(A3*(~A4)*(~A6))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/tx_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/prim_noinit.ram/xlnx_opt_LUT_DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_B_ENARDEN_cooolgate_en_gate_170 is not included in the LUT equation: 'O6=(A3*(~A4)*(~A6))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A6' of cell data/adc_total_data_sd/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/xlnx_opt_LUT_DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_B_ENARDEN_cooolgate_en_gate_208 is not included in the LUT equation: 'O6=(A4*(~A5)*(~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A6' of cell data/adc_total_data_sd/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/xlnx_opt_LUT_DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_T_ENARDEN_cooolgate_en_gate_216 is not included in the LUT equation: 'O6=(A4*(~A5)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A6' of cell ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/tx_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_noinit.ram/xlnx_opt_LUT_DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_B_ENARDEN_cooolgate_en_gate_172 is not included in the LUT equation: 'O6=(A4*(~A2)*(~A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A6' of cell ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/tx_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_noinit.ram/xlnx_opt_LUT_DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_B_ENARDEN_cooolgate_en_gate_174 is not included in the LUT equation: 'O6=(A4*(~A2)*(~A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDRC-153] Gated clock check: Net data/adc_A_data_package/next_state23_reg[1]_i_2_n_0 is a gated clock net sourced by a combinational pin data/adc_A_data_package/next_state23_reg[1]_i_2/O, cell data/adc_A_data_package/next_state23_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net data/adc_B_data_package/next_state23_reg[1]_i_2_n_0 is a gated clock net sourced by a combinational pin data/adc_B_data_package/next_state23_reg[1]_i_2/O, cell data/adc_B_data_package/next_state23_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net data/adc_C_data_package/next_state23_reg[1]_i_2_n_0 is a gated clock net sourced by a combinational pin data/adc_C_data_package/next_state23_reg[1]_i_2/O, cell data/adc_C_data_package/next_state23_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net data/adc_D_data_package/next_state23_reg[1]_i_2_n_0 is a gated clock net sourced by a combinational pin data/adc_D_data_package/next_state23_reg[1]_i_2/O, cell data/adc_D_data_package/next_state23_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net data/adc_E_data_package/next_state23_reg[1]_i_2_n_0 is a gated clock net sourced by a combinational pin data/adc_E_data_package/next_state23_reg[1]_i_2/O, cell data/adc_E_data_package/next_state23_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net data/adc_F_data_package/next_state23_reg[1]_i_2_n_0 is a gated clock net sourced by a combinational pin data/adc_F_data_package/next_state23_reg[1]_i_2/O, cell data/adc_F_data_package/next_state23_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net data/adc_G_data_package/next_state23_reg[1]_i_2_n_0 is a gated clock net sourced by a combinational pin data/adc_G_data_package/next_state23_reg[1]_i_2/O, cell data/adc_G_data_package/next_state23_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net data/adc_H_data_package/next_state23_reg[1]_i_2_n_0 is a gated clock net sourced by a combinational pin data/adc_H_data_package/next_state23_reg[1]_i_2/O, cell data/adc_H_data_package/next_state23_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net data/next_state34_reg[2]_i_2_n_0 is a gated clock net sourced by a combinational pin data/next_state34_reg[2]_i_2/O, cell data/next_state34_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net ethernet2/eth2/arbi_inst/e_rst_n_bufg_place is a gated clock net sourced by a combinational pin ethernet2/eth2/arbi_inst/e_rst_n_INST_0/O, cell ethernet2/eth2/arbi_inst/e_rst_n_INST_0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net ethernet2/eth2/smi_config_inst/smi_inst/mdio_en_reg_i_2_n_0 is a gated clock net sourced by a combinational pin ethernet2/eth2/smi_config_inst/smi_inst/mdio_en_reg_i_2/O, cell ethernet2/eth2/smi_config_inst/smi_inst/mdio_en_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC RTSTAT-10] No routable loads: 225 net(s) have no routable loads. The problem bus(es) and/or net(s) are data/adc_total_data_sd/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_B_ENBWREN_cooolgate_en_sig_192, data/adc_total_data_sd/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_B_ENBWREN_cooolgate_en_sig_193, data/adc_total_data_sd/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_B_ENBWREN_cooolgate_en_sig_194, data/adc_total_data_sd/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36_SDP.ram_B_ENBWREN_cooolgate_en_sig_195, data/adc_E_data_package/adc_fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/ENA_dly_D, ethernet2/eth2/arbi_inst/tx_buffer_inst/tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/ENA_dly_D, data/adc_A_data_package/adc_fifo3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/ENA_dly_D, data/adc_B_data_package/adc_fifo3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/ENA_dly_D, data/adc_G_data_package/adc_fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/ENA_dly_D, data/adc_G_data_package/adc_fifo3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/ENA_dly_D, data/adc_H_data_package/adc_fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/ENA_dly_D, data/adc_H_data_package/adc_fifo3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/ENA_dly_D, data/adc_D_data_package/adc_fifo3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/ENA_dly_D, ethernet2/eth2/arbi_inst/rx_buffer_inst/rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/ENA_dly_D, data/adc_A_data_package/adc_fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/ENA_dly_D... and (the first 15 of 223 listed).
+INFO: [DRC REQP-1857] RAMB18E2_writefirst_collision_advisory: Synchronous clocking is detected for BRAM (ethernet2/eth2/arbi_inst/rx_buffer_inst/rx_len_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-1857] RAMB18E2_writefirst_collision_advisory: Synchronous clocking is detected for BRAM (ethernet2/eth2/arbi_inst/tx_buffer_inst/tx_len_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-1857] RAMB18E2_writefirst_collision_advisory: Synchronous clocking is detected for BRAM (ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/udp_tx_checksum/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-1858] RAMB36E2_writefirst_collision_advisory: Synchronous clocking is detected for BRAM (data/tt/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-1934] RAMB18E2_nochange_collision_advisory: Synchronous clocking is detected for BRAM (ethernet2/eth2/mac_test0/mac_top0/icmp0/icmp_receive_ram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 36 Warnings, 5 Advisories
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 63580864 bits.
+Writing bitstream ./top.bit...
+Writing bitstream ./top.bin...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+¾Ü¾ø·ÃÎÊ¡£
+¾Ü¾ø·ÃÎÊ¡£
+INFO: [Common 17-83] Releasing license: Implementation
+26 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:13 ; elapsed = 00:00:46 . Memory (MB): peak = 2658.406 ; gain = 787.375
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 21 22:14:51 2024...

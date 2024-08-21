@@ -1,0 +1,33 @@
+$date
+        2024-Jul-31 00:43:20
+$end
+$version
+        Vivado v2017.4 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 1 " data/wr_en_fifo4 $end
+$var reg 4 # data/data_fifo4_in [3:0] $end
+$var reg 1 ' data/rd_en_fifo4 $end
+$var reg 4 ( data/data_fifo4_out [3:0] $end
+$var reg 4 , data/state34 [3:0] $end
+$var reg 4 0 data/next_state34 [3:0] $end
+$var reg 1 4 data/fifo34_start $end
+$var reg 12 5 data/cnt34 [11:0] $end
+$var reg 1 A data/trigger $end
+$var reg 1 B data/rd_en_ttt $end
+$var reg 64 C data/ttt_out [63:0] $end
+$var reg 1 %" data/pre_start $end
+$var reg 10 &" data/data_cnt [9:0] $end
+$var reg 4 0" data/cnt_ch [3:0] $end
+$var reg 1 4" data/adc_A_rd_fifo3 $end
+$var reg 10 5" data/adc_A_data_cnt_fifo3 [9:0] $end
+$var reg 10 ?" data/data_cnt_tem [9:0] $end
+$var reg 1 I" data/sd_wr_start $end
+$var reg 1 J" _TRIGGER $end
+$var reg 1 K" _WINDOW $end
+$var reg 1 L" _GAP $end
+$upscope $end
+$enddefinitions $end

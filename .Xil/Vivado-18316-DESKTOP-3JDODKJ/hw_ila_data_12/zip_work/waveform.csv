@@ -1,0 +1,1 @@
+Sample in Buffer,Sample in Window,TRIGGER,data/adc_F_data_sample/adc_data[11:0],data/adc_F_data_sample/state[2:0],data/adc_F_data_sample/next_state[2:0],data/adc_F_data_sample/cnt1[3:0],data/adc_F_data_sample/cnt2[4:0],data/adc_F_data_sample/rd_fifo1,data/adc_F_data_sample/fifo23_start

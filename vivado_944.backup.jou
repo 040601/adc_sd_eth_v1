@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Aug 21 00:39:55 2024
+# Process ID: 944
+# Current directory: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17764 C:\Users\DELL\Desktop\CW4.team\adc_8channel V2\adc_8channel_sd_eth_1600_v1\adc_8channel\adc_8channel.xpr
+# Log file: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/vivado.log
+# Journal file: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.xpr}
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/top.bit} [get_hw_devices xcku040_0]
+set_property PROBES.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+current_hw_device [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_sample/uut_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_4 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_sample/uut_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_C_data_package/uut_3"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_6 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_C_data_sample/uut_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_7 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_D_data_package/uut_3"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_8 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_D_data_sample/uut_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_9 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_E_data_package/uut_3"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_10 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_E_data_sample/uut_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_11 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_F_data_package/uut_3"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_12 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_F_data_sample/uut_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_13 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_G_data_package/uut_3"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_14 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_G_data_sample/uut_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_15 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_package/uut_3"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_16 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_sample/uut_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_17 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_18 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ustm"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_19 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_20 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_21 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/sd_card_top_m0/sd_card_sec_read_write_m0/sd"}]]
+set_property PROBES.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]

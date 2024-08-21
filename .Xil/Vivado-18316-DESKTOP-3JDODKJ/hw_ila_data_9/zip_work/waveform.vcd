@@ -1,0 +1,39 @@
+$date
+        2024-Aug-18 17:36:50
+$end
+$version
+        Vivado v2017.4 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 4 " data/adc_E_data_package/state23 [3:0] $end
+$var reg 4 & data/adc_E_data_package/next_state23 [3:0] $end
+$var reg 12 * data/adc_E_data_package/adc_data [11:0] $end
+$var reg 12 6 data/adc_E_data_package/fifo1 [11:0] $end
+$var reg 12 B data/adc_E_data_package/data_fifo2_out [11:0] $end
+$var reg 4 N data/adc_E_data_package/data_fifo3_in [3:0] $end
+$var reg 1 R data/adc_E_data_package/rd_fifo2 $end
+$var reg 11 S data/adc_E_data_package/data_cnt_fifo2 [10:0] $end
+$var reg 11 ^ data/adc_E_data_package/data_cnt_fifo2_use [10:0] $end
+$var reg 12 i data/adc_E_data_package/cnt23 [11:0] $end
+$var reg 1 u data/adc_E_data_package/rd_fifo1_1 $end
+$var reg 1 v data/adc_E_data_package/rd_fifo1 $end
+$var reg 1 w data/adc_E_data_package/clk_125m $end
+$var reg 1 x data/adc_E_data_package/full $end
+$var reg 1 y data/adc_E_data_package/empty $end
+$var reg 1 z data/adc_E_data_package/wr_rst_busy $end
+$var reg 1 { data/adc_E_data_package/rd_rst_busy $end
+$var reg 1 | data/adc_E_data_package/wr_fifo3 $end
+$var reg 1 } data/adc_E_data_package/fifo23_end $end
+$var reg 1 ~ data/adc_E_data_package/rd_fifo3 $end
+$var reg 13 !" data/adc_E_data_package/data_cnt_fifo3 [12:0] $end
+$var reg 4 ." data/adc_E_data_package/data_fifo3_out [3:0] $end
+$var reg 1 2" data/adc_E_data_package/full3 $end
+$var reg 1 3" data/adc_E_data_package/empty3 $end
+$var reg 1 4" _TRIGGER $end
+$var reg 1 5" _WINDOW $end
+$var reg 1 6" _GAP $end
+$upscope $end
+$enddefinitions $end

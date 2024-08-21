@@ -1,0 +1,1148 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Aug 18 12:39:49 2024
+# Process ID: 18316
+# Current directory: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22692 C:\Users\DELL\Desktop\CW4.team\adc_8channel V2\adc_8channel\adc_8channel.xpr
+# Log file: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/vivado.log
+# Journal file: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1087.797 ; gain = 307.039
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+set_property PROGRAM.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.bit} [get_hw_devices xcku040_0]
+set_property PROBES.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+current_hw_device [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-1435] Device xcku040 (JTAG device index = 0) is not programmed (DONE status = 0).
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1718.035 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 21 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1873.148 ; gain = 155.113
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_4 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_4.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_C_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_5.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_6 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_C_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_6.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_7 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_D_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_7.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_8 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_D_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_8.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_9 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_E_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_9.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_10 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_E_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_10.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_11 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_F_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_11.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_12 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_F_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_12.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_13 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_G_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_13.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_14 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_G_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_14.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_15 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_15.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_16 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_16.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_17 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_18 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ustm"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_18.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_19 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_20 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}]]
+WARNING: Simulation object wr_sd/sd_card_top_m0/sd_card_sec_read_write_m0/sd_sec_write_data_req was not found in the design.
+WARNING: Simulation object wr_sd/sd_card_top_m0/sd_card_sec_read_write_m0/state was not found in the design.
+WARNING: Simulation object wr_sd/sd_card_top_m0/sd_card_sec_read_write_m0/block_write_data_rd was not found in the design.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_20.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_21 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/sd_card_top_m0/sd_card_sec_read_write_m0/sd"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_21.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 12:52:58
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 12:52:58
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 12:53:02
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_17' trigger was stopped by user at 2024-Aug-18 12:53:42
+WARNING: [Labtools 27-157] hw_ila [hw_ila_17] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 12:53:43
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 12:53:43
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 12:53:46
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+set_property PROBES.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2082.582 ; gain = 1.672
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 21 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_4.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_5.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_6.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_7.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_8.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_9.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_10.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_11.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_12.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_13.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_14.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_15.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_16.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_18.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_20.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_21.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+refresh_hw_device: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2082.582 ; gain = 0.000
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 12:54:17
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 12:54:17
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes data/rd_en_fifo5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+set_property TRIGGER_COMPARE_VALUE eq4'b0001 [get_hw_probes data/next_state34 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 12:54:34
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 12:54:35
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq4'bXXXX [get_hw_probes data/next_state34 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes data/rd_en_fifo5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 12:55:44
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_19' trigger was armed at 2024-Aug-18 12:56:01
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_19' trigger was stopped by user at 2024-Aug-18 12:56:05
+WARNING: [Labtools 27-157] hw_ila [hw_ila_19] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_19' trigger was armed at 2024-Aug-18 12:56:05
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_19' triggered at 2024-Aug-18 12:56:05
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_19' trigger was armed at 2024-Aug-18 12:56:37
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_19' trigger was stopped by user at 2024-Aug-18 12:56:44
+WARNING: [Labtools 27-157] hw_ila [hw_ila_19] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_19' trigger was armed at 2024-Aug-18 12:56:44
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_19' triggered at 2024-Aug-18 12:56:44
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_19' trigger was armed at 2024-Aug-18 12:56:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_19' triggered at 2024-Aug-18 12:56:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_19' trigger was armed at 2024-Aug-18 12:56:52
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_19' triggered at 2024-Aug-18 12:56:52
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_17' trigger was stopped by user at 2024-Aug-18 12:56:58
+WARNING: [Labtools 27-157] hw_ila [hw_ila_17] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 12:56:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 12:56:59
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 12:57:01
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 12:57:01
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 12:57:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 12:57:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 12:57:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 12:57:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 12:57:22
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 12:57:22
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 12:57:25
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 12:57:25
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes data/rd_en_fifo5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+set_property TRIGGER_COMPARE_VALUE eq4'b0001 [get_hw_probes data/next_state34 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 12:57:57
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 12:57:58
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 12:58:46
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 12:58:46
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_3' trigger was armed at 2024-Aug-18 12:58:50
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_3' triggered at 2024-Aug-18 12:58:50
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_C_data_package/uut_3"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_5' trigger was armed at 2024-Aug-18 12:58:54
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_C_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_C_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_5' triggered at 2024-Aug-18 12:58:54
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_5.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_D_data_package/uut_3"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_7' trigger was armed at 2024-Aug-18 12:59:27
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_D_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_D_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_7' triggered at 2024-Aug-18 12:59:27
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_7.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_E_data_package/uut_3"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_9' trigger was armed at 2024-Aug-18 12:59:33
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_E_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_E_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_9' triggered at 2024-Aug-18 12:59:33
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_9.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_F_data_package/uut_3"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_11' trigger was armed at 2024-Aug-18 12:59:38
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_F_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_F_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_11' triggered at 2024-Aug-18 12:59:38
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_11.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_G_data_package/uut_3"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_13' trigger was armed at 2024-Aug-18 12:59:43
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_G_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_G_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_13' triggered at 2024-Aug-18 12:59:43
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_13.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_package/uut_3"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_15' trigger was armed at 2024-Aug-18 12:59:47
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_15' triggered at 2024-Aug-18 12:59:47
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_15.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 13:00:10
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 13:00:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 13:02:48
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 13:02:48
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {data/adc_A_data_package/empty3} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {data/adc_A_data_package/full3} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 13:05:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 13:05:00
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 13:06:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 13:06:00
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 13:06:12
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 13:06:12
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 13:06:13
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 13:06:13
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 13:06:15
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 13:06:15
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 13:06:21
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 13:06:21
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 13:06:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 13:06:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 13:06:26
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 13:06:26
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 13:06:46
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 13:06:46
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 13:06:48
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 13:06:48
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 13:07:06
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 13:07:06
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 13:07:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 13:07:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 13:07:21
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 13:07:21
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 13:07:23
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 13:07:23
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 13:07:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 13:07:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 13:07:26
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 13:07:27
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE {eq4'hX eq4'hX} [get_hw_probes data/adc_A_data_package/state23 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes data/adc_A_data_package/rd_fifo3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 13:09:51
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 13:09:52
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 13:10:02
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 13:10:03
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes data/adc_G_data_package/rd_fifo3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_G_data_package/uut_3"}]]
+set_property TRIGGER_COMPARE_VALUE eq4'hX [get_hw_probes data/adc_G_data_package/state23 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_G_data_package/uut_3"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_G_data_package/uut_3"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_13' trigger was armed at 2024-Aug-18 13:11:12
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_G_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_G_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_13' triggered at 2024-Aug-18 13:11:12
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_13.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_13.wcfg} -radix hex { {data/adc_G_data_package/rd_fifo3} }
+add_wave -into {hw_ila_data_15.wcfg} -radix hex { {data/adc_H_data_package/rd_fifo3} }
+set_property TRIGGER_COMPARE_VALUE eq4'hX [get_hw_probes data/adc_H_data_package/next_state23 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_package/uut_3"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes data/adc_H_data_package/rd_fifo3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_package/uut_3"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_package/uut_3"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_15' trigger was armed at 2024-Aug-18 13:12:09
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_15' triggered at 2024-Aug-18 13:12:10
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_15.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+launch_runs impl_1 -jobs 22
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xci' is already up-to-date
+[Sun Aug 18 13:25:57 2024] Launched synth_1...
+Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/synth_1/runme.log
+[Sun Aug 18 13:25:57 2024] Launched impl_1...
+Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 4556 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-i
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/.Xil/Vivado-18316-DESKTOP-3JDODKJ/dcp15/top_board.xdc]
+Finished Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/.Xil/Vivado-18316-DESKTOP-3JDODKJ/dcp15/top_board.xdc]
+Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/.Xil/Vivado-18316-DESKTOP-3JDODKJ/dcp15/top_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xdc:57]
+get_clocks: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3502.520 ; gain = 428.484
+Finished Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/.Xil/Vivado-18316-DESKTOP-3JDODKJ/dcp15/top_early.xdc]
+Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/.Xil/Vivado-18316-DESKTOP-3JDODKJ/dcp15/top.xdc]
+WARNING: [Constraints 18-619] A clock with name 'adc1_clk_p' already exists, overwriting the previous clock with the same name. [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/constrs_1/imports/new/adc_ethernet.xdc:239]
+WARNING: [Constraints 18-619] A clock with name 'adc2_clk_p' already exists, overwriting the previous clock with the same name. [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/constrs_1/imports/new/adc_ethernet.xdc:240]
+Finished Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/.Xil/Vivado-18316-DESKTOP-3JDODKJ/dcp15/top.xdc]
+Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/.Xil/Vivado-18316-DESKTOP-3JDODKJ/dcp15/top_late.xdc]
+Finished Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/.Xil/Vivado-18316-DESKTOP-3JDODKJ/dcp15/top_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 3719.121 ; gain = 33.469
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 3719.121 ; gain = 33.469
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2350 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 2284 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 8 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 53 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 1 instances
+  RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+
+open_run: Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 3947.320 ; gain = 1805.352
+open_report: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 4791.355 ; gain = 840.852
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xci' is already up-to-date
+[Sun Aug 18 13:47:35 2024] Launched impl_1...
+Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 5507.703 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 21 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_4.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_5.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_6.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_7.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_8.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_9.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_10.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_11.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_12.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_13.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_14.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_15.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_16.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_18.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_20.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_21.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+refresh_hw_device: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 5507.703 ; gain = 0.000
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 13:51:01
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 13:51:01
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 13:51:09
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 13:51:09
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 13:51:41
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 13:51:41
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 13:51:45
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 13:51:45
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes ethernet2/eth2/mac_test0/empty5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes ethernet2/eth2/mac_test0/rd_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_19' trigger was armed at 2024-Aug-18 13:52:31
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_19' trigger was stopped by user at 2024-Aug-18 13:52:35
+WARNING: [Labtools 27-157] hw_ila [hw_ila_19] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_19' trigger was armed at 2024-Aug-18 13:52:36
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_19' triggered at 2024-Aug-18 13:52:36
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_19' trigger was armed at 2024-Aug-18 13:52:39
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_19' triggered at 2024-Aug-18 13:52:39
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xcku040 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xci' is already up-to-date
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Sun Aug 18 15:33:49 2024] Launched impl_1...
+Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xcku040 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xcku040 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 5507.703 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 21 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 5507.703 ; gain = 0.000
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_4 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_B_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_4.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_C_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_5.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_6 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_C_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_6.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_7 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_D_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_7.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_8 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_D_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_8.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_9 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_E_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_9.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_10 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_E_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_10.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_11 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_F_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_11.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_12 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_F_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_12.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_13 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_G_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_13.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_14 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_G_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_14.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_15 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_package/uut_3"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_15.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_16 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_sample/uut_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_16.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_17 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_18 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ustm"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_18.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_19 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_20 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}]]
+WARNING: Simulation object wr_sd/sd_card_top_m0/sd_card_sec_read_write_m0/sd_sec_write_data_req was not found in the design.
+WARNING: Simulation object wr_sd/sd_card_top_m0/sd_card_sec_read_write_m0/state was not found in the design.
+WARNING: Simulation object wr_sd/sd_card_top_m0/sd_card_sec_read_write_m0/block_write_data_rd was not found in the design.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_20.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_21 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/sd_card_top_m0/sd_card_sec_read_write_m0/sd"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_21.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 15:41:06
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 15:41:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_20.wcfg} -radix hex { {wr_sd/rd_fifo4} {wr_sd/sd_init_done} {wr_sd/sd_sec_read_data} {wr_sd/sd_sec_read_data_valid} {wr_sd/sd_sec_write_addr} {wr_sd/sd_sec_write_data} {wr_sd/sd_sec_write_data_req} {wr_sd/sd_sec_write_end} {wr_sd/sd_wr_data} {wr_sd/sd_wr_start} {wr_sd/state} }
+add_wave -into {hw_ila_data_20.wcfg} -radix unsigned { {wr_sd/cnt_sd} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_20' trigger was armed at 2024-Aug-18 15:41:33
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_20' triggered at 2024-Aug-18 15:41:33
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_20.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq4'h2 [get_hw_probes wr_sd/state -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_20' trigger was armed at 2024-Aug-18 15:41:50
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 15:42:16
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 15:42:16
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 15:42:18
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 15:42:19
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_20' trigger was stopped by user at 2024-Aug-18 15:42:41
+WARNING: [Labtools 27-157] hw_ila [hw_ila_20] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_20' trigger was armed at 2024-Aug-18 15:42:41
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_20' triggered at 2024-Aug-18 15:42:41
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_20.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq4'h1 [get_hw_probes wr_sd/state -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_20' trigger was armed at 2024-Aug-18 15:43:04
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_20' triggered at 2024-Aug-18 15:43:04
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_20.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+launch_runs impl_1 -jobs 24
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xci' is already up-to-date
+[Sun Aug 18 15:46:46 2024] Launched synth_1...
+Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/synth_1/runme.log
+[Sun Aug 18 15:46:46 2024] Launched impl_1...
+Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xci' is already up-to-date
+[Sun Aug 18 15:56:14 2024] Launched impl_1...
+Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 5507.703 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 21 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_4.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_5.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_6.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_7.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_8.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_9.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_10.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_11.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_12.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_13.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_14.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_15.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_16.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_18.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_20.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_21.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+refresh_hw_device: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 5507.703 ; gain = 0.000
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 16:02:10
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 16:02:10
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_20' trigger was armed at 2024-Aug-18 16:03:58
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"wr_sd/ila_m0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_20' triggered at 2024-Aug-18 16:03:58
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_20.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_19' trigger was armed at 2024-Aug-18 16:04:10
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/urtss"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_19' triggered at 2024-Aug-18 16:04:10
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 16:04:36
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 16:04:36
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 16:06:40
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 16:06:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_sample/uut_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2024-Aug-18 16:06:43
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_sample/uut_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_sample/uut_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2024-Aug-18 16:06:43
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 16:07:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 16:07:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 16:07:51
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 16:07:52
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 16:07:53
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 16:07:54
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 16:07:55
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 16:07:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 16:07:58
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 16:07:59
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 16:08:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 16:08:01
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-18 16:08:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_A_data_package/uut_3"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-18 16:08:33
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xci' is already up-to-date
+[Sun Aug 18 16:11:46 2024] Launched synth_1...
+Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/synth_1/runme.log
+[Sun Aug 18 16:11:46 2024] Launched impl_1...
+Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/runme.log
+reset_run impl_1
+set_property -dict [list CONFIG.Input_Depth {65536} CONFIG.Output_Depth {65536} CONFIG.Data_Count_Width {16} CONFIG.Write_Data_Count_Width {16} CONFIG.Read_Data_Count_Width {16} CONFIG.Full_Threshold_Assert_Value {65534} CONFIG.Full_Threshold_Negate_Value {65533}] [get_ips fifo4]
+generate_target all [get_files  {{C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo4/fifo4.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fifo4'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo4'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fifo4'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fifo4'...
+catch { config_ip_cache -export [get_ips -all fifo4] }
+export_ip_user_files -of_objects [get_files {{C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo4/fifo4.xci}}] -no_script -sync -force -quiet
+reset_run fifo4_synth_1
+launch_runs -jobs 24 fifo4_synth_1
+[Sun Aug 18 16:13:50 2024] Launched fifo4_synth_1...
+Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/fifo4_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo4/fifo4.xci}}] -directory {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.ip_user_files} -ipstatic_source_dir {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.cache/compile_simlib/modelsim} {questa=C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.cache/compile_simlib/questa} {riviera=C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.cache/compile_simlib/riviera} {activehdl=C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Input_Depth {8192} CONFIG.Output_Depth {8192} CONFIG.Data_Count_Width {13} CONFIG.Write_Data_Count_Width {13} CONFIG.Read_Data_Count_Width {13} CONFIG.Full_Threshold_Assert_Value {8190} CONFIG.Full_Threshold_Negate_Value {8189}] [get_ips fifo3]
+generate_target all [get_files  {{C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo3/fifo3.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fifo3'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo3'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fifo3'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fifo3'...
+catch { config_ip_cache -export [get_ips -all fifo3] }
+export_ip_user_files -of_objects [get_files {{C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo3/fifo3.xci}}] -no_script -sync -force -quiet
+reset_run fifo3_synth_1
+launch_runs -jobs 24 fifo3_synth_1
+[Sun Aug 18 16:22:44 2024] Launched fifo3_synth_1...
+Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/fifo3_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo3/fifo3.xci}}] -directory {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.ip_user_files} -ipstatic_source_dir {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.cache/compile_simlib/modelsim} {questa=C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.cache/compile_simlib/questa} {riviera=C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.cache/compile_simlib/riviera} {activehdl=C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_PROBE20_WIDTH {13}] [get_ips ila_2]
+generate_target all [get_files  {{C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_2.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_2'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_2'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_2_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_2'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_2'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_2'...
+catch { config_ip_cache -export [get_ips -all ila_2] }
+export_ip_user_files -of_objects [get_files {{C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_2.xci}}] -no_script -sync -force -quiet
+reset_run ila_2_synth_1
+launch_runs -jobs 24 ila_2_synth_1
+[Sun Aug 18 16:24:07 2024] Launched ila_2_synth_1...
+Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/ila_2_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_2/ila_2.xci}}] -directory {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.ip_user_files} -ipstatic_source_dir {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.cache/compile_simlib/modelsim} {questa=C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.cache/compile_simlib/questa} {riviera=C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.cache/compile_simlib/riviera} {activehdl=C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_PROBE15_WIDTH {13}] [get_ips ila_1]
+generate_target all [get_files  {{C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_1/ila_1.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_1'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_1/ila_1_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_1'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_1'...
+catch { config_ip_cache -export [get_ips -all ila_1] }
+export_ip_user_files -of_objects [get_files {{C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_1/ila_1.xci}}] -no_script -sync -force -quiet
+reset_run ila_1_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/ila_1_synth_1
+
+launch_runs -jobs 24 ila_1_synth_1
+[Sun Aug 18 16:25:25 2024] Launched ila_1_synth_1...
+Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/ila_1_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_1/ila_1.xci}}] -directory {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.ip_user_files} -ipstatic_source_dir {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.cache/compile_simlib/modelsim} {questa=C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.cache/compile_simlib/questa} {riviera=C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.cache/compile_simlib/riviera} {activehdl=C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_PROBE16_WIDTH {13} CONFIG.C_PROBE12_WIDTH {13}] [get_ips ila_1]
+generate_target all [get_files  {{C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_1/ila_1.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_1'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_1/ila_1_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_1'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_1'...
+catch { config_ip_cache -export [get_ips -all ila_1] }
+export_ip_user_files -of_objects [get_files {{C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_1/ila_1.xci}}] -no_script -sync -force -quiet
+reset_run ila_1_synth_1
+launch_runs -jobs 24 ila_1_synth_1
+[Sun Aug 18 16:28:25 2024] Launched ila_1_synth_1...
+Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/ila_1_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_1/ila_1.xci}}] -directory {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.ip_user_files} -ipstatic_source_dir {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.cache/compile_simlib/modelsim} {questa=C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.cache/compile_simlib/questa} {riviera=C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.cache/compile_simlib/riviera} {activehdl=C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_PROBE7_WIDTH {14}] [get_ips ila_1]
+generate_target all [get_files  {{C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_1/ila_1.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_1'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_1/ila_1_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_1'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_1'...
+catch { config_ip_cache -export [get_ips -all ila_1] }
+export_ip_user_files -of_objects [get_files {{C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_1/ila_1.xci}}] -no_script -sync -force -quiet
+reset_run ila_1_synth_1
+launch_runs -jobs 24 ila_1_synth_1
+[Sun Aug 18 16:30:58 2024] Launched ila_1_synth_1...
+Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/ila_1_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/ila_1/ila_1.xci}}] -directory {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.ip_user_files} -ipstatic_source_dir {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.cache/compile_simlib/modelsim} {questa=C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.cache/compile_simlib/questa} {riviera=C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.cache/compile_simlib/riviera} {activehdl=C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xci' is already up-to-date
+[Sun Aug 18 16:33:25 2024] Launched synth_1...
+Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/synth_1/runme.log
+[Sun Aug 18 16:33:25 2024] Launched impl_1...
+Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xci' is already up-to-date
+[Sun Aug 18 16:36:10 2024] Launched impl_1...
+Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 5509.309 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 21 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_4.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_5.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_6.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_7.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_8.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_9.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_10.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_11.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_12.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_13.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_14.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_15.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_16.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_18.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_20.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_21.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+refresh_hw_device: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 5511.812 ; gain = 2.504
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 16:45:42
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 16:45:42
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 16:52:18
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 16:52:18
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 16:52:21
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 16:52:21
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 16:52:26
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 16:52:26
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 16:52:29
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 16:52:29
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 16:52:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 16:52:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 16:52:35
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 16:52:35
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 16:52:44
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 16:52:44
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 16:53:41
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 16:53:41
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 16:53:43
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_17' trigger was stopped by user at 2024-Aug-18 16:53:48
+WARNING: [Labtools 27-157] hw_ila [hw_ila_17] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 16:53:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 16:53:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 16:53:51
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 16:53:51
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 16:54:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 16:54:03
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 16:54:08
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 16:54:08
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xci' is already up-to-date
+[Sun Aug 18 17:02:11 2024] Launched synth_1...
+Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/synth_1/runme.log
+[Sun Aug 18 17:02:11 2024] Launched impl_1...
+Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 5531.480 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 21 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_4.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_5.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_6.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_7.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_8.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_9.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_10.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_11.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_12.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_13.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_14.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_15.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_16.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_18.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_20.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_21.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+refresh_hw_device: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 5531.480 ; gain = 0.000
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 17:18:44
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 17:18:44
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 17:18:50
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 17:18:50
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 17:19:23
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 17:19:23
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 17:19:33
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 17:19:34
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xci' is already up-to-date
+[Sun Aug 18 17:22:07 2024] Launched synth_1...
+Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/synth_1/runme.log
+[Sun Aug 18 17:22:07 2024] Launched impl_1...
+Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.runs/impl_1/top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 5535.977 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 21 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_4.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_5.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_6.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_7.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_8.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_9.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_10.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_11.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_12.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_13.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_14.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_15.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_16.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_18.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_19.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_20.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_21.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+refresh_hw_device: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 5535.977 ; gain = 0.000
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 17:37:30
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 17:37:31
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 17:37:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 17:37:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 17:38:14
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 17:38:14
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ustm"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_18' trigger was armed at 2024-Aug-18 18:25:20
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ustm"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ethernet2/eth2/mac_test0/mac_top0/mac_tx0/udp0/ustm"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_18' triggered at 2024-Aug-18 18:25:21
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_18.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_sample/uut_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_16' trigger was armed at 2024-Aug-18 18:25:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_sample/uut_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/adc_H_data_sample/uut_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_16' triggered at 2024-Aug-18 18:25:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_16.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_17' trigger was armed at 2024-Aug-18 18:25:31
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"data/uut_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_17' triggered at 2024-Aug-18 18:25:31
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel/adc_8channel.hw/backup/hw_ila_data_17.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.

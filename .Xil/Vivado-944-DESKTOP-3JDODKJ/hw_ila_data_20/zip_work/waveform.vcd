@@ -1,0 +1,27 @@
+$date
+        2024-Aug-21 00:43:49
+$end
+$version
+        Vivado v2017.4 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 1 " wr_sd/sd_sec_read_data_valid $end
+$var reg 8 # wr_sd/sd_sec_read_data [7:0] $end
+$var reg 1 + wr_sd/sd_sec_write_data_req $end
+$var reg 8 , wr_sd/sd_sec_write_data [7:0] $end
+$var reg 4 4 wr_sd/state [3:0] $end
+$var reg 1 8 wr_sd/sd_wr_start $end
+$var reg 1 9 wr_sd/sd_init_done $end
+$var reg 4 : wr_sd/sd_wr_data [3:0] $end
+$var reg 1 > wr_sd/rd_fifo4 $end
+$var reg 1 ? wr_sd/sd_sec_write_end $end
+$var reg 32 @ wr_sd/sd_sec_write_addr [31:0] $end
+$var reg 9 ` wr_sd/cnt_sd [8:0] $end
+$var reg 1 i _TRIGGER $end
+$var reg 1 j _WINDOW $end
+$var reg 1 k _GAP $end
+$upscope $end
+$enddefinitions $end

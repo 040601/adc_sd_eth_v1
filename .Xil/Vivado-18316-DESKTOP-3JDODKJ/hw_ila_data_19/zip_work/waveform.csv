@@ -1,0 +1,1 @@
+Sample in Buffer,Sample in Window,TRIGGER,ethernet2/eth2/mac_test0/length[15:0],ethernet2/eth2/mac_test0/data[3:0],ethernet2/eth2/mac_test0/rd_en,ethernet2/eth2/mac_test0/active,ethernet2/eth2/mac_test0/state[8:0],ethernet2/eth2/mac_test0/wait_cnt[31:0],ethernet2/eth2/mac_test0/almost_full,ethernet2/eth2/mac_test0/empty5

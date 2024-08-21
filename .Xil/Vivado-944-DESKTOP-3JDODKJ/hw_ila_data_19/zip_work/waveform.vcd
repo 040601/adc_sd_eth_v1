@@ -1,0 +1,23 @@
+$date
+        2024-Aug-21 00:43:49
+$end
+$version
+        Vivado v2017.4 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 16 " ethernet2/eth2/mac_test0/length [15:0] $end
+$var reg 4 2 ethernet2/eth2/mac_test0/data [3:0] $end
+$var reg 1 6 ethernet2/eth2/mac_test0/rd_en $end
+$var reg 1 7 ethernet2/eth2/mac_test0/active $end
+$var reg 9 8 ethernet2/eth2/mac_test0/state [8:0] $end
+$var reg 32 A ethernet2/eth2/mac_test0/wait_cnt [31:0] $end
+$var reg 1 a ethernet2/eth2/mac_test0/almost_full $end
+$var reg 1 b ethernet2/eth2/mac_test0/empty5 $end
+$var reg 1 c _TRIGGER $end
+$var reg 1 d _WINDOW $end
+$var reg 1 e _GAP $end
+$upscope $end
+$enddefinitions $end

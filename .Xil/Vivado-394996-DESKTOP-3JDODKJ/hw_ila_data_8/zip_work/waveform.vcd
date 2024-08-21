@@ -1,0 +1,22 @@
+$date
+        2024-Aug-02 20:00:53
+$end
+$version
+        Vivado v2017.4 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 12 " data/adc_D_data_sample/adc_data [11:0] $end
+$var reg 3 . data/adc_D_data_sample/state [2:0] $end
+$var reg 3 1 data/adc_D_data_sample/next_state [2:0] $end
+$var reg 4 4 data/adc_D_data_sample/cnt1 [3:0] $end
+$var reg 5 8 data/adc_D_data_sample/cnt2 [4:0] $end
+$var reg 1 = data/adc_D_data_sample/rd_fifo1 $end
+$var reg 1 > data/adc_D_data_sample/fifo23_start $end
+$var reg 1 ? _TRIGGER $end
+$var reg 1 @ _WINDOW $end
+$var reg 1 A _GAP $end
+$upscope $end
+$enddefinitions $end

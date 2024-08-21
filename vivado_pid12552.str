@@ -1,0 +1,597 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 12552
+License: Customer
+
+Current time: 	Wed Aug 21 21:13:01 CST 2024
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 24
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 255 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	F:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	F:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	DELL
+User home directory: C:/Users/DELL
+User working directory: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: F:/Xilinx/Vivado
+HDI_APPROOT: F:/Xilinx/Vivado/2017.4
+RDI_DATADIR: F:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: F:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/DELL/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/DELL/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/DELL/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	F:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/vivado.log
+Vivado journal file location: 	C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/vivado.jou
+Engine tmp dir: 	C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/.Xil/Vivado-12552-DESKTOP-3JDODKJ
+
+GUI allocated memory:	180 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 641 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 64 MB (+64661kb) [00:00:03]
+// [Engine Memory]: 544 MB (+418466kb) [00:00:03]
+// Opening Vivado Project: C:\Users\DELL\Desktop\CW4.team\adc_8channel V2\adc_8channel_sd_eth_1600_v1\adc_8channel\adc_8channel.xpr. Version: Vivado v2017.4 
+// bs (cj):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// [GUI Memory]: 75 MB (+7733kb) [00:00:06]
+// [Engine Memory]: 619 MB (+50750kb) [00:00:06]
+// HMemoryUtils.trashcanNow. Engine heap size: 703 MB. GUI used memory: 35 MB. Current time: 8/21/24 9:13:03 PM CST
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 703 MB (+55331kb) [00:00:11]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 765 MB (+28744kb) [00:00:18]
+// [GUI Memory]: 81 MB (+2695kb) [00:00:19]
+// [Engine Memory]: 817 MB (+13949kb) [00:00:19]
+// [GUI Memory]: 89 MB (+4293kb) [00:00:19]
+// [Engine Memory]: 895 MB (+38523kb) [00:00:19]
+// Tcl Message: open_project {C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2017.4/data/ip'. 
+// Project name: adc_8channel; location: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel; part: xcku040-ffva1156-2-i
+// [GUI Memory]: 99 MB (+5436kb) [00:00:21]
+// Tcl Message: open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 1098.844 ; gain = 308.391 
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 104 MB (+558kb) [00:00:22]
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, fifo5]", 5, true); // B (D, cj) - Node
+// [GUI Memory]: 115 MB (+5523kb) [00:00:27]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, fifo5, fifo5.dcp]", 10, false, false, false, false, false, true); // B (D, cj) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// r (cj): Re-customize IP: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 942 MB. GUI used memory: 85 MB. Current time: 8/21/24 9:13:23 PM CST
+// [Engine Memory]: 943 MB (+3311kb) [00:00:29]
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Native Ports", 1); // bb (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // bb (C, r)
+selectComboBox("Fifo Implementation (Fifo_Implementation)", "Independent Clocks Block RAM", 5); // y (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Native Ports", 1); // bb (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Status Flags", 2); // bb (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Native Ports", 1); // bb (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Status Flags", 2); // bb (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Data Counts", 3); // bb (C, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.Fifo_Implementation {Independent_Clocks_Block_RAM} CONFIG.Data_Count {false} CONFIG.Full_Threshold_Assert_Value {65533} CONFIG.Full_Threshold_Negate_Value {65532}] [get_ips fifo5] 
+// au (cj): Generate Output Products: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (au)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// bs (cj):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  {{C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo5/fifo5.xci}}] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fifo5'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo5'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fifo5'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fifo5'... 
+// HMemoryUtils.trashcanNow. Engine heap size: 966 MB. GUI used memory: 85 MB. Current time: 8/21/24 9:13:58 PM CST
+// Tcl Message: catch { config_ip_cache -export [get_ips -all fifo5] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files {{C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo5/fifo5.xci}}] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run fifo5_synth_1 
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs -jobs 24 fifo5_synth_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Aug 21 21:14:01 2024] Launched fifo5_synth_1... Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/fifo5_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// [GUI Memory]: 122 MB (+1718kb) [00:01:06]
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton (A, G)
+// [Engine Memory]: 1,046 MB (+59061kb) [00:01:14]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, fifo5, Instantiation Template]", 6); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, fifo5, Instantiation Template, fifo5.vho]", 7, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, fifo5, Instantiation Template, fifo5.vho]", 7, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, fifo5, Instantiation Template, fifo5.veo]", 8, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, fifo5, Instantiation Template, fifo5.veo]", 8, false, false, false, false, false, true); // B (D, cj) - Double Click
+// [GUI Memory]: 130 MB (+2006kb) [00:01:20]
+selectCodeEditor("fifo5.veo", 129, 165); // D (w, cj)
+typeControlKey((HResource) null, "fifo5.veo", 'c'); // D (w, cj)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i (N, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v)]", 1); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), data : data_processing (data_processing.v)]", 4, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), data : data_processing (data_processing.v), adc_D_data_sample : data_sample (data_sample.v)]", 8, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+// Elapsed time: 11 seconds
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "fifo5"); // l (aP, cj)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "fifo5"); // l (aP, cj)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "fifo5"); // l (aP, cj)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "fifo5"); // l (aP, cj)
+selectCodeEditor("data_processing.v", 118, 349); // cd (w, cj)
+selectCodeEditor("data_processing.v", 141, 348); // cd (w, cj)
+typeControlKey((HResource) null, "data_processing.v", 'v'); // cd (w, cj)
+selectCodeEditor("data_processing.v", 47, 356); // cd (w, cj)
+// Elapsed time: 21 seconds
+selectCodeEditor("data_processing.v", 127, 369); // cd (w, cj)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+selectCodeEditor("data_processing.v", 170, 345); // cd (w, cj)
+selectCodeEditor("data_processing.v", 188, 330); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,072 MB. GUI used memory: 96 MB. Current time: 8/21/24 9:15:28 PM CST
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v)]", 26, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v)]", 27, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+// [GUI Memory]: 139 MB (+2391kb) [00:02:44]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v)]", 27, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v), mac_test0 : mac_test (mac_test.v)]", 31, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v), mac_test0 : mac_test (mac_test.v)]", 31, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v), mac_test0 : mac_test (mac_test.v)]", 31, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v), mac_test0 : mac_test (mac_test.v), mac_top0 : mac_top (mac_top.v)]", 32); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v), mac_test0 : mac_test (mac_test.v), mac_top0 : mac_top (mac_top.v), mac_tx0 : mac_tx_top (mac_tx_top.v)]", 33); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v), mac_test0 : mac_test (mac_test.v), mac_top0 : mac_top (mac_top.v), mac_tx0 : mac_tx_top (mac_tx_top.v), udp0 : udp_tx (udp_tx.v)]", 40, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v), mac_test0 : mac_test (mac_test.v), mac_top0 : mac_top (mac_top.v), mac_tx0 : mac_tx_top (mac_tx_top.v), udp0 : udp_tx (udp_tx.v), ustm : ila_6 (ila_6.xci)]", 43, false, false, false, false, false, true); // B (D, cj) - Double Click
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v), mac_test0 : mac_test (mac_test.v), mac_top0 : mac_top (mac_top.v), mac_tx0 : mac_tx_top (mac_tx_top.v), udp0 : udp_tx (udp_tx.v)]", 40); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v), mac_test0 : mac_test (mac_test.v), mac_top0 : mac_top (mac_top.v), mac_tx0 : mac_tx_top (mac_tx_top.v)]", 33, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v), mac_test0 : mac_test (mac_test.v), mac_top0 : mac_top (mac_top.v), mac_tx0 : mac_tx_top (mac_tx_top.v)]", 33, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+// [GUI Memory]: 150 MB (+3957kb) [00:03:14]
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "udp", true); // l (aP, cj)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "udp"); // l (aP, cj)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "udp"); // l (aP, cj)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "udp"); // l (aP, cj)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "udp"); // l (aP, cj)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "udp"); // l (aP, cj)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "udp"); // l (aP, cj)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "udp"); // l (aP, cj)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "udp"); // l (aP, cj)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "udp"); // l (aP, cj)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "udp"); // l (aP, cj)
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v), mac_test0 : mac_test (mac_test.v), mac_top0 : mac_top (mac_top.v), mac_tx0 : mac_tx_top (mac_tx_top.v)]", 33); // B (D, cj)
+// Elapsed time: 14 seconds
+selectCodeEditor("mac_tx_top.v", 271, 43); // cd (w, cj)
+// Elapsed time: 13 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v), mac_test0 : mac_test (mac_test.v), mac_top0 : mac_top (mac_top.v), mac_tx0 : mac_tx_top (mac_tx_top.v)]", 33); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v), mac_test0 : mac_test (mac_test.v), mac_top0 : mac_top (mac_top.v)]", 32, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v), mac_test0 : mac_test (mac_test.v), mac_top0 : mac_top (mac_top.v)]", 32, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk", true); // l (aP, cj)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aP, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v), mac_test0 : mac_test (mac_test.v)]", 31, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v), mac_test0 : mac_test (mac_test.v)]", 31, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v)]", 27, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v)]", 27, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v)]", 27); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v), util_gmii_to_rgmii_m0 : util_gmii_to_rgmii (util_gmii_to_rgmii.v)]", 30, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v), util_gmii_to_rgmii_m0 : util_gmii_to_rgmii (util_gmii_to_rgmii.v)]", 30, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectCodeEditor("util_gmii_to_rgmii.v", 110, 410); // cd (w, cj)
+// Elapsed time: 12 seconds
+selectCodeEditor("util_gmii_to_rgmii.v", 156, 338); // cd (w, cj)
+selectCodeEditor("util_gmii_to_rgmii.v", 132, 373); // cd (w, cj)
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v)]", 27, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v)]", 27, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), wr_sd : sd_card_test (sd_card_test.v)]", 25, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v)]", 26, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v)]", 26, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v)]", 26); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v)]", 27, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v), util_gmii_to_rgmii_m0 : util_gmii_to_rgmii (util_gmii_to_rgmii.v)]", 30, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v), util_gmii_to_rgmii_m0 : util_gmii_to_rgmii (util_gmii_to_rgmii.v)]", 30, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v), eth2 : ethernet_test (ethernet_test.v), util_gmii_to_rgmii_m0 : util_gmii_to_rgmii (util_gmii_to_rgmii.v)]", 30, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectCodeEditor("util_gmii_to_rgmii.v", 108, 207); // cd (w, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v)]", 26, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v), ethernet2 : ethernet (ethernet.v)]", 26, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_1.v)]", 1, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectCodeEditor("top_1.v", 235, 298); // cd (w, cj)
+typeControlKey((HResource) null, "top_1.v", 'c'); // cd (w, cj)
+selectCodeEditor("top_1.v", 175, 150); // cd (w, cj)
+typeControlKey((HResource) null, "top_1.v", 'v'); // cd (w, cj)
+selectCodeEditor("top_1.v", 181, 138); // cd (w, cj)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 4); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// x (cj): Synthesis is Out-of-date: addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: DG_GRAPH_GENERATED
+// f (cj): Launch Runs: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 24 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xci' is already up-to-date 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Aug 21 21:19:49 2024] Launched synth_1... Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/synth_1/runme.log [Wed Aug 21 21:19:49 2024] Launched impl_1... Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/runme.log 
+// [GUI Memory]: 157 MB (+82kb) [00:06:57]
+// TclEventType: RUN_FAILED
+// ah (cj): Synthesis Failed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 100 MB. Current time: 8/21/24 9:45:28 PM CST
+// Elapsed time: 1586 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-448] named port connection 'data_count' does not exist for instance 'adc_total_data_eth' of module 'fifo5' [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/imports/new/data_processing.v:997]. ]", 2, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\DELL\Desktop\CW4.team\adc_8channel V2\adc_8channel_sd_eth_1600_v1\adc_8channel\adc_8channel.srcs\sources_1\imports\new\data_processing.v;-;;-;16;-;line;-;997;-;;-;16;-;"); // ah (O, cj)
+// Elapsed time: 22 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, fifo5]", 5, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, fifo5]", 5, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (cj): Re-customize IP: addNotify
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Data Counts", 3); // bb (C, r)
+selectCheckBox((HResource) null, "Data Count", true); // g (l, r): TRUE
+selectCheckBox((HResource) null, "Write Data Count (Synchronized with Write Clk)", true); // g (l, r): TRUE
+selectCheckBox((HResource) null, "Write Data Count (Synchronized with Write Clk)", false); // g (l, r): FALSE
+selectCheckBox((HResource) null, "Read Data Count (Synchronized with Read Clk)", true); // g (l, r): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Re-customize IP"); // r (cj)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.Write_Data_Count {false} CONFIG.Read_Data_Count {true}] [get_ips fifo5] 
+// au (cj): Generate Output Products: addNotify
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (au)
+// bs (cj):  Managing Output Products : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  {{C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo5/fifo5.xci}}] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fifo5'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo5'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fifo5'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fifo5'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all fifo5] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files {{C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/fifo5/fifo5.xci}}] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run fifo5_synth_1 
+// Tcl Message: launch_runs -jobs 24 fifo5_synth_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Aug 21 21:47:10 2024] Launched fifo5_synth_1... Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/fifo5_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,095 MB. GUI used memory: 113 MB. Current time: 8/21/24 9:47:13 PM CST
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,103 MB (+4831kb) [00:35:29]
+// Elapsed time: 78 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton (A, G)
+// [GUI Memory]: 175 MB (+10188kb) [00:35:40]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fifo5.veo", 2); // k (j, cj)
+// [GUI Memory]: 185 MB (+1555kb) [00:35:40]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,142 MB. GUI used memory: 105 MB. Current time: 8/21/24 9:48:38 PM CST
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (cZ, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "data_processing.v", 3); // k (j, cj)
+selectCodeEditor("data_processing.v", 42, 199); // cd (w, cj)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 24 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xci' is already up-to-date 
+// Tcl Message: [Wed Aug 21 21:49:10 2024] Launched synth_1... Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: RUN_COMPLETED
+// ah (cj): Synthesis Completed: addNotify
+// Elapsed time: 87 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 24 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xci' is already up-to-date 
+// Tcl Message: [Wed Aug 21 21:50:39 2024] Launched impl_1... Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Implementation Completed: addNotify
+// Elapsed time: 818 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bs (cj):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// [Engine Memory]: 1,247 MB (+93343kb) [00:51:24]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,289 MB. GUI used memory: 105 MB. Current time: 8/21/24 10:04:24 PM CST
+// [Engine Memory]: 1,340 MB (+31363kb) [00:51:30]
+// [Engine Memory]: 1,470 MB (+66190kb) [00:51:35]
+// [Engine Memory]: 2,013 MB (+492802kb) [00:51:40]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// HMemoryUtils.trashcanNow. Engine heap size: 2,152 MB. GUI used memory: 105 MB. Current time: 8/21/24 10:04:39 PM CST
+// [Engine Memory]: 2,262 MB (+155138kb) [00:51:45]
+// TclEventType: SDC_CONSTRAINT_ADD
+// [Engine Memory]: 2,416 MB (+43512kb) [00:51:50]
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// HMemoryUtils.trashcanNow. Engine heap size: 2,565 MB. GUI used memory: 105 MB. Current time: 8/21/24 10:04:54 PM CST
+// [Engine Memory]: 2,568 MB (+32797kb) [00:51:59]
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,589 MB. GUI used memory: 105 MB. Current time: 8/21/24 10:04:59 PM CST
+// [Engine Memory]: 2,709 MB (+12476kb) [00:52:04]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: F:/Xilinx/Vivado/2017.4/data/parts/xilinx/kintexu/devint/kintexu/xcku040/xcku040.xgd; ZipEntry: xcku040_detail.xgd elapsed time: 0.6s
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 4692 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2017.4 INFO: [Device 21-403] Loading part xcku040-ffva1156-2-i INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/.Xil/Vivado-12552-DESKTOP-3JDODKJ/dcp32/top_board.xdc] Finished Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/.Xil/Vivado-12552-DESKTOP-3JDODKJ/dcp32/top_board.xdc] Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/.Xil/Vivado-12552-DESKTOP-3JDODKJ/dcp32/top_early.xdc] 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xdc:57] INFO: [Timing 38-2] Deriving generated clocks [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xdc:57] 
+// Tcl Message: get_clocks: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2655.398 ; gain = 424.840 
+// Tcl Message: Finished Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/.Xil/Vivado-12552-DESKTOP-3JDODKJ/dcp32/top_early.xdc] Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/.Xil/Vivado-12552-DESKTOP-3JDODKJ/dcp32/top.xdc] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/.Xil/Vivado-12552-DESKTOP-3JDODKJ/dcp32/top.xdc] Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/.Xil/Vivado-12552-DESKTOP-3JDODKJ/dcp32/top_late.xdc] Finished Parsing XDC File [C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/.Xil/Vivado-12552-DESKTOP-3JDODKJ/dcp32/top_late.xdc] Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 2874.656 ; gain = 33.504 
+// Tcl Message: Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2874.656 ; gain = 33.504 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 2350 instances were transformed.   CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 2284 instances   IBUF => IBUF (IBUFCTRL, INBUF): 8 instances   IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 53 instances   IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 1 instances   RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances  
+// Device view-level: 0.0
+// ExpRunCommands.openImplResults elapsed time: 44s
+// TclEventType: DRC_ADDED
+// Tcl Message: open_run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:43 . Memory (MB): peak = 3048.320 ; gain = 1725.504 
+// TclEventType: DRC_ADDED
+// [GUI Memory]: 196 MB (+1802kb) [00:52:07]
+// TclEventType: METHODOLOGY_ADDED
+// [Engine Memory]: 2,857 MB (+12908kb) [00:52:07]
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 212 MB (+6092kb) [00:52:10]
+// [Engine Memory]: 3,458 MB (+480550kb) [00:52:10]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 6.6s
+// [GUI Memory]: 226 MB (+3597kb) [00:52:11]
+// [GUI Memory]: 240 MB (+3227kb) [00:52:11]
+// [GUI Memory]: 253 MB (+893kb) [00:52:12]
+// [Engine Memory]: 3,640 MB (+9532kb) [00:52:12]
+// Device view-level: 0.0
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [Engine Memory]: 3,899 MB (+80472kb) [00:52:14]
+// 'dO' command handler elapsed time: 52 seconds
+// Elapsed time: 52 seconds
+dismissDialog("Open Implemented Design"); // bs (cj)
+// [Engine Memory]: 4,143 MB (+51538kb) [00:52:18]
+// RouteApi::initDelayMediator elapsed time: 15.7s
+// [Engine Memory]: 4,472 MB (+128180kb) [00:52:22]
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// HMemoryUtils.trashcanNow. Engine heap size: 4,472 MB. GUI used memory: 221 MB. Current time: 8/21/24 10:05:19 PM CST
+// Elapsed time: 474 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 24 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.srcs/sources_1/ip/sys_clk_mmcm/sys_clk_mmcm.xci' is already up-to-date 
+// Tcl Message: [Wed Aug 21 22:13:06 2024] Launched impl_1... Run output will be captured here: C:/Users/DELL/Desktop/CW4.team/adc_8channel V2/adc_8channel_sd_eth_1600_v1/adc_8channel/adc_8channel.runs/impl_1/runme.log 
+// [GUI Memory]: 271 MB (+4775kb) [01:00:18]
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 556 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
